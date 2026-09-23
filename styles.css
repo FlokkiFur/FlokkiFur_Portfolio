@@ -167,10 +167,12 @@ section {
 /*------------------------------------*/
 
 .home {
-  min-height: 80vh;
+  height: calc(100vh - 85px);
   display: flex;
   align-items: center;
-  padding: 25% 10%;
+  justify-content: space-between;
+  padding: 30% 10% 15% 10%;
+  margin: 0;
 }
 
 .home-content h1 {
@@ -220,6 +222,21 @@ section {
 
 .social-media a:hover {
   color: #bf0885;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home-image img {
+  width: 105%;
+  max-width: 650px;
+  height: auto;
+  object-fit: contain;
+  transform: translate(50px, -130px);
 }
 
 /* Masonry Effect*/
