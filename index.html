@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flokki's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" href="/images/pictures/icon/icon.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">FlokkiFur</a>
+        <button class="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <!--Works-->
+          <li class="dropdown">
+            <a href="#Illustrations" class="works-parent">Works</a>
+            <div class="dropdown-content">
+              <a href="#Illustrations">Illustrations</a>
+              <a href="#3d">3D</a>
+              <a href="#Animations">Motion Graphics</a>
+            </div>
+          </li>
+          <!---------------------->
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!------------------------------->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi! I'm Flokki</h1>
+        <h3>And I'm a <span class="changing-text"></span></h3>
+
+        <div class="social-media">
+          <a href="https://x.com/byFlokkii" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="https://www.tiktok.com/@flokki_fur" target="_blank"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="https://www.instagram.com/flokkifur/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------->
+
+    <section id="Illustrations">
+      <div class="sectionTitle">
+        <h1>Illustrations</h1>
+      </div>
+
+      <!-- Images -->
+      <div class="image_container">
+        <img
+          src="./images/pictures/artworks/artwork1.png"
+          alt="Mura artwork"
+          data-title="Fanart: @nishimura077 (Twitter)"
+          data-roles="Illustration"
+          data-software="Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/artworks/artwork2.png"
+          alt="test"
+          data-title="Character Design: @kikacl (Discord)"
+          data-roles="Illustration, Character Design"
+          data-software="Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/artworks/artwork3.png"
+          alt="test"
+          data-title="Fanart: @yheseven (Twitter)"
+          data-roles="Illustration"
+          data-software="Krita"
+          data-year="2025"
+        />
+        <img
+          src="./images/pictures/artworks/artwork4.png"
+          alt="test"
+          data-title="Character Design: @kikacl (Discord)"
+          data-roles="Illustration, Character Design"
+          data-software="Krita"
+          data-year="2025"
+        />
+        <img
+          src="./images/pictures/artworks/artwork5.png"
+          alt="test"
+          data-title="Fanart: @kikacl (Discord)"
+          data-roles="Illustration"
+          data-software="Krita"
+          data-year="2025"
+        />
+        <img
+          src="./images/pictures/artworks/artwork6.png"
+          alt="test"
+          data-title="Fanart: Toriel (Undertale)"
+          data-roles="Illustration"
+          data-software="Krita, Adobe Illustrator"
+          data-year="2025"
+        />
+        <img
+          src="./images/pictures/artworks/artwork7.png"
+          alt="test"
+          data-title="Fanart: @yheseven (Twitter)"
+          data-roles="Illustration"
+          data-software="Krita"
+          data-year="2024"
+        />
+        <img
+          src="./images/pictures/artworks/artwork8.png"
+          alt="test"
+          data-title="Fanart: @lggjotinha (Twitter)"
+          data-roles="Illustration"
+          data-software="Krita"
+          data-year="2024"
+        />
+        <img
+          src="./images/pictures/artworks/artwork9.png"
+          alt="test"
+          data-title="Fanart: @kyuremiya (Twitter)"
+          data-roles="Illustration"
+          data-software="Krita"
+          data-year="2023"
+        />
+        <img
+          src="./images/pictures/artworks/artwork10.png"
+          alt="test"
+          data-title="OC: Flokki"
+          data-roles="Illustration"
+          data-software="Krita"
+          data-year="2023"
+        />
+      </div>
+    </section>
+
+    <!-- Modal Effect -->
+    <div id="lightboxModal" class="modal">
+      <span class="close_btn">&times;</span>
+      <div class="modal_content">
+        <!-- Left Side: Image -->
+        <div class="modal_left">
+          <img id="modalImg" src="" alt="Popup view" />
+        </div>
+
+        <!-- Right Side: Details -->
+        <div class="modal_right">
+          <h2 id="modalTitle">Project Title</h2>
+
+          <div class="modal_info_group">
+            <span class="info_label">ROLES DONE</span>
+            <p id="modalRoles">Illustration</p>
+          </div>
+
+          <div class="modal_info_group">
+            <span class="info_label">SOFTWARE(S) USED</span>
+            <p id="modalSoftware">Photoshop</p>
+          </div>
+
+          <div class="modal_info_group">
+            <span class="info_label">YEAR</span>
+            <p id="modalYear">2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------>
+
+    <section id="3d">
+      <div class="sectionTitle">
+        <h1>3D</h1>
+      </div>
+
+      <div class="sectionSubtitle">
+        <h2>Kea Character Rig (Freak Show)</h2>
+      </div>
+
+      <div class="video_showcase">
+        <!-- Left Box: Video -->
+        <div class="video_left">
+          <video controls preload="metadata">
+            <source
+              src="./images/videos/3d_modeling/freak_show/kea_rig/kea_rig_test.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support video playback.
+          </video>
+        </div>
+
+        <!-- Right Box: Details -->
+        <div class="video_right">
+          <h2>Kea's Rig Lip Syncing Test</h2>
+
+          <div class="info_group">
+            <span class="info_label">ROLES DONE</span>
+            <p>Sculpting, Retopology, Rigging, Texturing, Animation</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">SOFTWARE USED</span>
+            <p>Autodesk Maya</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">YEAR</span>
+            <p>2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Images for 3D Animation -->
+      <div class="sectionSubtitle">
+        <h2>Model Breakdown</h2>
+      </div>
+      <div class="image_container">
+        <img
+          src="./images/pictures/3d_modeling/freak_show/kea_rig/kea_rig.png"
+          alt="Sketch process"
+          data-title="Kea's Rig Render (3/4 View)"
+          data-roles="Sculpting, Retopology, Rigging, Texturing"
+          data-software="Autodesk Maya"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/kea_rig/kea_rig_back.png"
+          alt="Lineart process"
+          data-title="Kea's Rig Render (Back View)"
+          data-roles="Sculpting, Retopology, Rigging, Texturing"
+          data-software="Autodesk Maya"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/kea_rig/kea_rig_front.png"
+          alt="Rigging process"
+          data-title="Kea's Rig Render (Front View)"
+          data-roles="Sculpting, Retopology, Rigging, Texturing"
+          data-software="Autodesk Maya"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/character_refsheets/Ref_Kea.png"
+          alt="Rigging process"
+          data-title="Kea's Character Ref Sheet"
+          data-roles="Illustration, Character Design"
+          data-software="Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/kea_rig/kea_rig_side.png"
+          alt="Rigging process"
+          data-title="Kea's Rig Render (Side View)"
+          data-roles="Sculpting, Retopology, Rigging, Texturing"
+          data-software="Autodesk Maya"
+          data-year="2026"
+        />
+      </div>
+
+      <div class="sectionSubtitle">
+        <h2>"The" Park (Freak Show)</h2>
+      </div>
+
+      <div class="video_showcase">
+        <!-- Left Box: Video -->
+        <div class="video_left">
+          <video controls preload="metadata">
+            <source
+              src="./images/videos/3d_modeling/freak_show/environment_park/the_park_freak_show.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support video playback.
+          </video>
+        </div>
+
+        <!-- Right Box: Details -->
+        <div class="video_right">
+          <h2>The Park (Freak Show)</h2>
+
+          <div class="info_group">
+            <span class="info_label">ROLES DONE</span>
+            <p>Modeling, Texturing</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">SOFTWARE(S) USED</span>
+            <p>Autodesk Maya, Krita</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">YEAR</span>
+            <p>2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Images -->
+      <div class="image_container">
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_00.png"
+          alt="test"
+          data-title="The Park - Bench (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_01.png"
+          alt="test"
+          data-title="The Park - Sandbox (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_02.png"
+          alt="test"
+          data-title="The Park - Playground (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_03.png"
+          alt="test"
+          data-title="The Park - Newsstand (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_04.png"
+          alt="test"
+          data-title="The Park - Ice Cream Cart (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_05.png"
+          alt="test"
+          data-title="The Park - Ice Cream Cart / Playground (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_06.png"
+          alt="test"
+          data-title="The Park - Playground (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_07.png"
+          alt="test"
+          data-title="The Park - Picnic Tables (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_08.png"
+          alt="test"
+          data-title="The Park - Bush / Picnic Tables (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_09.png"
+          alt="test"
+          data-title="The Park - Overview (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_10.png"
+          alt="test"
+          data-title="The Park - Newsstand (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+        <img
+          src="./images/pictures/3d_modeling/freak_show/environment_park/park_11.png"
+          alt="test"
+          data-title="The Park - Homeless Man Encampment (Freak Show)"
+          data-roles="Modeling, Texturing"
+          data-software="Autodesk Maya, Krita"
+          data-year="2026"
+        />
+      </div>
+
+      <!------------------------------------->
+
+      <div class="sectionSubtitle">
+        <h2>Lowpoly Environment</h2>
+      </div>
+
+      <div class="video_showcase">
+        <!-- Left Box: Video -->
+        <div class="video_left">
+          <video controls preload="metadata">
+            <source
+              src="./images/videos/3d_modeling/lowpoly_environment/lowpoly_environment.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support video playback.
+          </video>
+        </div>
+
+        <!-- Right Box: Details -->
+        <div class="video_right">
+          <h2>Lowpoly Environment Assignment (Picnic in The Forest)</h2>
+
+          <div class="info_group">
+            <span class="info_label">ROLES DONE</span>
+            <p>Modeling, Texturing</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">SOFTWARE(S) USED</span>
+            <p>Autodesk Maya, Krita</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">YEAR</span>
+            <p>2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------->
+
+      <div class="sectionSubtitle">
+        <h2>Realistic Environment</h2>
+      </div>
+
+      <div class="video_showcase">
+        <!-- Left Box: Video -->
+        <div class="video_left">
+          <video controls preload="metadata">
+            <source
+              src="./images/videos/3d_modeling/highpoly_environment/highpoly_environment.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support video playback.
+          </video>
+        </div>
+
+        <!-- Right Box: Details -->
+        <div class="video_right">
+          <h2>Highpoly Environment Assignment (House Interior)</h2>
+
+          <div class="info_group">
+            <span class="info_label">ROLES DONE</span>
+            <p>Modeling</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">SOFTWARE(S) USED</span>
+            <p>Autodesk Maya</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">YEAR</span>
+            <p>2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Images -->
+      <div class="image_container">
+        <img
+          src="./images/pictures/3d_modeling/highpoly_environent/highpoly_environment_1.png"
+          alt="test"
+          data-title="Highpoly Environment Assignment for 3D Modeling Class (House Exterior)"
+          data-roles="Modeling"
+          data-software="Autodesk Maya"
+          data-year="2025"
+        />
+        <img
+          src="./images/pictures/3d_modeling/highpoly_environent/highpoly_environment_2.png"
+          alt="test"
+          data-title="Highpoly Environment Assignment for 3D Modeling Class (Environment)"
+          data-roles="Modeling"
+          data-software="Autodesk Maya"
+          data-year="2025"
+        />
+      </div>
+    </section>
+
+    <!------------------>
+    <section id="Animations">
+      <div class="sectionTitle">
+        <h1>Motion Graphics</h1>
+      </div>
+
+      <div class="sectionSubtitle">
+        <h2>2D Character Rigging</h2>
+      </div>
+
+      <!-- 2D Animations Section -->
+
+      <div class="video_showcase">
+        <!-- Left Box: Video -->
+        <div class="video_left">
+          <video controls preload="metadata">
+            <source
+              src="./images/videos/2d_rigging/rigging_1_ae.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support video playback.
+          </video>
+        </div>
+
+        <!-- Right Box: Details -->
+        <div class="video_right">
+          <h2>2D Character Rigging Assignment for Animation Class</h2>
+
+          <div class="info_group">
+            <span class="info_label">ROLES DONE</span>
+            <p>Illustration, Rigging, Animation</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">SOFTWARE(S) USED</span>
+            <p>Adobe After Effects, Adobe Illustrator</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">YEAR</span>
+            <p>2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------->
+
+      <div class="sectionSubtitle">
+        <h2>Kinetic Typography</h2>
+      </div>
+
+      <!-- 2D Animations Section -->
+
+      <div class="video_showcase">
+        <!-- Left Box: Video -->
+        <div class="video_left">
+          <video controls preload="metadata">
+            <source
+              src="./images/videos/motion_typography/stay_wunderland.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support video playback.
+          </video>
+        </div>
+
+        <!-- Right Box: Details -->
+        <div class="video_right">
+          <h2>Kinetic Typography (Stay - Wunderland)</h2>
+
+          <div class="info_group">
+            <span class="info_label">ROLES DONE</span>
+            <p>Animation</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">SOFTWARE(S) USED</span>
+            <p>Adobe After Effects</p>
+          </div>
+
+          <div class="info_group">
+            <span class="info_label">YEAR</span>
+            <p>2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------->
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h1>About Me</h1>
+        <p>
+          Hi! I'm Flokki, an artist based in Portugal who focuses primarily on
+          3D projects and drawings.
+        </p>
+        <p>
+          I began to deepen my artistic journey in 2020, when I took advantage
+          of the quarantine to focus on my craft and share my drawings on social
+          media. That motivation only grew stronger when I started college,
+          where exposure to various forms of expression opened my eyes to new
+          ways of creating, leading me to experiment and take my art to a new
+          level.
+        </p>
+        <p>
+          Currently, I am pursuing a Bachelor's degree in [Proposital Emptiness]
+          at [Proposital Emptiness] to deepen my understanding of digital art
+          and better define my career path. Professionally, my goal is to work
+          for a game company as a 3D modeler.
+        </p>
+        <p>
+          Outside of my portfolio, my biggest interests revolve around vídeo
+          games (especially shooters and cartoon-styled projects); Animated
+          media, ranging indie projects to full-length movies and series; And
+          music (mainly Rock and Metal), where I also enjoy singing and
+          drumming.
+        </p>
+        <p><b>Languages:</b> Native Portuguese, Fluent English</p>
+      </div>
+    </section>
+
+    <footer>
+      <hr />
+      <div class="row">
+        <div class="rights">
+          <p>&#169; 2026 Flokkifur. All Rights Reserved</p>
+        </div>
+        <div class="social-media-footer">
+          <a href="https://x.com/byFlokkii" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="https://www.tiktok.com/@flokki_fur" target="_blank"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="https://www.instagram.com/flokkifur/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link Javascript -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
